@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright file="DefaultRegistry.cs" company="Web Advanced">
+// <copyright file="IoC.cs" company="Web Advanced">
 // Copyright 2012 Web Advanced (www.webadvanced.com)
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -15,27 +15,13 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+
 namespace SportsStore1.WebUI.DependencyResolution {
     using StructureMap;
-    using StructureMap.Configuration.DSL;
-    using StructureMap.Graph;
-    using SportsStore1.Domain.Concrete;
-    using SportsStore1.Domain.Abstract;
-
-    public class DefaultRegistry : Registry {
-        #region Constructors and Destructors
-
-        public DefaultRegistry() {
-            Scan(
-                scan => {
-                    scan.TheCallingAssembly();
-                    scan.WithDefaultConventions();
-					scan.With(new ControllerConvention());
-                });
-            For<IProductRepository>().Use<EFProductRespository>();
-            //For<IExample>().Use<Example>();
+	
+    public static class IoC {
+        public static IContainer Initialize() {
+            return new Container(c => c.AddRegistry<DefaultRegistry>());
         }
-
-        #endregion
     }
 }
