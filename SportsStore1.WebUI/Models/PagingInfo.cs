@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-namespace SportsStore1.WebUI.Models
+using System.Text;
+using System.Threading.Tasks;
+using SportsStore.Domain.Entities;
+using SportsStore.Domain.Abstract;
+using SportsStore.WebUI.HtmlHelpers;
+namespace SportsStore.WebUI.Models
 {
     public class PagingInfo
     {

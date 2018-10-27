@@ -15,12 +15,12 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace SportsStore1.WebUI.DependencyResolution {
+namespace SportsStore.WebUI.DependencyResolution {
     using StructureMap;
     using StructureMap.Configuration.DSL;
     using StructureMap.Graph;
-    using SportsStore1.Domain.Concrete;
-    using SportsStore1.Domain.Abstract;
+    using SportsStore.Domain.Concrete;
+    using SportsStore.Domain.Abstract;
 
     public class DefaultRegistry : Registry {
         #region Constructors and Destructors

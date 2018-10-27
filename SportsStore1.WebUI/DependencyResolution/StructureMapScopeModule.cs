@@ -1,7 +1,7 @@
-namespace SportsStore1.WebUI.DependencyResolution {
+namespace SportsStore.WebUI.DependencyResolution {
     using System.Web;
 
-    using SportsStore1.WebUI.App_Start;
+    using SportsStore.WebUI.App_Start;
 
     using StructureMap.Web.Pipeline;
 

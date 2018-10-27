@@ -15,19 +15,19 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-using SportsStore1.WebUI.App_Start;
+using SportsStore.WebUI.App_Start;
 
 using WebActivatorEx;
 
 [assembly: PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
 [assembly: ApplicationShutdownMethod(typeof(StructuremapMvc), "End")]
 
-namespace SportsStore1.WebUI.App_Start {
+namespace SportsStore.WebUI.App_Start {
 	using System.Web.Mvc;
 
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
-	using SportsStore1.WebUI.DependencyResolution;
+	using SportsStore.WebUI.DependencyResolution;
 
     using StructureMap;
     

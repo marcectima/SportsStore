@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SportsStore1.Domain.Entities;
-using SportsStore1.Domain.Abstract;
+using SportsStore.Domain.Entities;
+using SportsStore.Domain.Abstract;
 
-namespace SportsStore1.Domain.Concrete
+namespace SportsStore.Domain.Concrete
 {
     public class EFProductRespository : IProductRepository
     {

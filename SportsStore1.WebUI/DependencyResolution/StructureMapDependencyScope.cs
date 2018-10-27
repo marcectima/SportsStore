@@ -15,13 +15,13 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace SportsStore1.WebUI.DependencyResolution {
+namespace SportsStore.WebUI.DependencyResolution {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Web;
-    using SportsStore1.Domain.Abstract;
-    using SportsStore1.Domain.Entities;
+    using SportsStore.Domain.Abstract;
+    using SportsStore.Domain.Entities;
     using Moq;
     using Microsoft.Practices.ServiceLocation;
 

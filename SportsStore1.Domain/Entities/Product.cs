@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SportsStore1.Domain.Entities
+namespace SportsStore.Domain.Entities
 {
     public class Product
     {
@@ -16,6 +17,7 @@ namespace SportsStore1.Domain.Entities
 
         public decimal Price { get; set; }
 
+        [Column("Category")]
         public string Category { get; set; }
     }
 }

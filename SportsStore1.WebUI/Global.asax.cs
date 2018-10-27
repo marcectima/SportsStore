@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace SportsStore1.WebUI
+namespace SportsStore.WebUI
 {
     public class MvcApplication : System.Web.HttpApplication
     {

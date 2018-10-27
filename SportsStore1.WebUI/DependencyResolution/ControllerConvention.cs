@@ -15,7 +15,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace SportsStore1.WebUI.DependencyResolution {
+namespace SportsStore.WebUI.DependencyResolution {
     using System;
     using System.Web.Mvc;
     // updated to support StructureMap 4.X

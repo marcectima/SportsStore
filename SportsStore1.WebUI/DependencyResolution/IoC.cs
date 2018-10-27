@@ -16,7 +16,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
-namespace SportsStore1.WebUI.DependencyResolution {
+namespace SportsStore.WebUI.DependencyResolution {
     using StructureMap;
 	
     public static class IoC {
