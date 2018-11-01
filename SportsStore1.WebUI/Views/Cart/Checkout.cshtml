@@ -30,13 +30,5 @@
             Gift wrap these items
         </label>
     </div>
-    <div class="text-center">
-        @using (Html.BeginForm("RemoveFromCart", "Cart"))
-        {
-            @Html.Hidden("ProductId", line.Product.ProductID)
-            @Html.HiddenFor(x => x.ReturnUrl)
-            <input class="btn btn-primary" type="submit" value="Complete order" />
-        }
-
-    </div>
+        <input class="btn btn-primary" type="submit" value="Complete order" />
 }
