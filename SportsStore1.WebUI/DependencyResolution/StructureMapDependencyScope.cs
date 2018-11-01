@@ -24,9 +24,11 @@ namespace SportsStore.WebUI.DependencyResolution {
     using SportsStore.Domain.Entities;
     using Moq;
     using Microsoft.Practices.ServiceLocation;
+    using System.Configuration;
 
     using StructureMap;
-	
+    using SportsStore.Domain.Concrete;
+
     /// <summary>
     /// The structure map dependency scope.
     /// </summary>
@@ -58,6 +60,11 @@ namespace SportsStore.WebUI.DependencyResolution {
             new Product {Name = "Running shoes", Price = 95 },
             });
             container.Inject<IProductRepository>(mock.Object);
+            EmailSettings emailSettings = new EmailSettings
+            {
+                WriteAsFile = bool.Parse(ConfigurationManager.AppSettings["Email.WriteAsFile"] ?? "false")
+            };
+            container.Inject<EmailSettings>(emailSettings);
         }
         #region Public Properties
 

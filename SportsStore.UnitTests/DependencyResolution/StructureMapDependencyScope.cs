@@ -117,7 +117,6 @@ namespace SportsStore.UnitTests.DependencyResolution {
 
             return container.GetInstance(serviceType, key);
         }
-
         #endregion
     }
 }
